@@ -381,7 +381,8 @@ add_project_arguments(global_cxxflags, language: 'cpp')
 
 linker_flags = [
   ['-Wl,-Bsymbolic', false,],
-  ['-Wl,-Bsymbolic-functions', get_option('_b_symbolic_functions'),],
+  # clang seems not to have this option, so just disable as a workaround
+  # ['-Wl,-Bsymbolic-functions', get_option('_b_symbolic_functions'),],
 ]
 
 foreach flag: linker_flags

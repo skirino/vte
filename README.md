@@ -1,3 +1,11 @@
+This repository is a fork of https://gitlab.gnome.org/GNOME/vte
+with (rather adhoc) patches for macOS.
+Note that to build in macOS with brew-installed dependencies it'd be necessary to
+- `$ export PKG_CONFIG_PATH='/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig'
+- `$ brew link gettext --force`
+
+---
+
 Virtual TErminal
 ================
 

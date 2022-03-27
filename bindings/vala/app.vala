@@ -982,7 +982,7 @@ class App : Gtk.Application
       return value;
     }
 
-    public const OptionEntry[] entries = {
+    private const OptionEntry[] entries = {
       { "audible-bell", 'a', 0, OptionArg.NONE, ref audible,
         "Use audible terminal bell", null },
       { "command", 'c', 0, OptionArg.STRING, ref command,
